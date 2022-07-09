@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/image/logo.png" type="image/x-icon">
+    <title>MyFoodie</title>
+    <!-- Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.4/css/all.css">
+    <!-- slick slider -->
+    <link rel="stylesheet" href="./assets/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="./assets/slick-1.8.1/slick/slick-theme.css">
+
+    <!-- My css -->
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/preload.css">
+    <link rel="stylesheet" href="./assets/css/recipes.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+</head>
+<body>
+    <div id="preload">
+        <h1>Cooking in progress..</h1>
+        <div id="cooking">
+          <div class="bubble"></div>
+          <div class="bubble"></div>
+          <div class="bubble"></div>
+          <div class="bubble"></div>
+          <div class="bubble"></div>
+          <div id="area">
+            <div id="sides">
+              <div id="pan"></div>
+              <div id="handle"></div>
+            </div>
+            <div id="pancake">
+              <div id="pastry"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- Navigation -->
+    <header class="header" id="header">
+        <div class="grid wide">
+            <div class="header-container">
+                <div class="logo">
+                    <a href="/" class="logo--link">
+                        <img src="./assets/image/logo.png" alt="logo-page" class="logo--img">
+                        <span class="logo--name">MyFoodie</span>
+                    </a>
+                </div>
+                
+                <nav class="navbar">
+                    <ul class="nav-list">
+                        <li class="nav__item">
+                            <a href="./index.html" class="nav__item--link">Home</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="./recipes.html" class="nav__item--link active">Recipes</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="./explorer.html" class="nav__item--link">Explorer</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="./contact.html" class="nav__item--link">Contact</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__item--link">Mini game</a>
+                        </li>
+                    </ul>
+                    <div class="nav-social">
+                        <ul class="nav-list">
+                            <li class="nav__item">
+                                <a href="#" class="nav__item--link">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__item--link">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__item--link">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__item--link">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="app">
+        <section class="top-banner">
+            <div class="banner-wrapper">
+                <div class="overlay-banner"></div>
+                <h1 class="title banner-title text-center">
+                    <span>Recipes</span> 
+                </h1>
+            </div>
+        </section>
+        <section class="search-section">
+            <div class="grid wide">
+                <div class="ss-wrapper">
+                    <div class="ss-gallery">
+                        <div class="ss-gallery-item">
+                            <div class="gallery-item--bg" style="background: url(./assets/image/cooking3.jpg) no-repeat center/cover;"></div>
+                        </div>
+                        <div class="ss-gallery-item">
+                            <div class="gallery-item--bg" style="background: url(./assets/image/cooking2.jpg) no-repeat center/cover;"></div>
+                        </div>
+                        <div class="ss-gallery-item">
+                            <div class="gallery-item--bg" style="background: url(./assets/image/cooking4.jpg) no-repeat center/cover;"></div>
+                        </div>
+                    </div>
+                    <div class="ss-filter text-center">
+                        <h5 class="sub-title text-highlight filter-heading">Search & Filter</h5>
+                        <div class="input-group">
+                            <input type="text" id="search-text" class="form-input" placeholder="I want to make...">
+                            <button class="search-btn">
+                                <i class="fal fa-search"></i>
+                            </button>
+                        </div>
+                        <div class="filter__category">
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected="">Category</option>
+                                <option value="1">Cooking</option>
+                                <option value="2">Drink</option>
+                                <option value="3">Dessert</option>
+                                <i class="far fa-angle-down drop-down--icon"></i>  
+                            </select>
+              
+                            <select class="form-select">
+                                <option selected="">Country</option>
+                                <option value="1">Viet Nam</option>
+                                <option value="2">Japan</option>
+                                <option value="3">China</option>
+                                <i class="far fa-angle-down drop-down--icon"></i>
+                            </select>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <footer>
+        <div class="gallery-footer">
+            <div class="gallery-footer-item" style="background: url(./assets/image/food-cn4.jpg) no-repeat center/cover;"></div>
+            <div class="gallery-footer-item" style="background: url(./assets/image/card-food-jp.jpg) no-repeat center/cover;"></div>
+            <div class="gallery-footer-item" style="background: url(./assets/image/vn3.jpg) no-repeat center/cover;"></div>
+            <div class="gallery-footer-item" style="background: url(./assets/image/vn6.jpg) no-repeat center/cover;"></div>
+            <div class="gallery-footer-item" style="background: url(./assets/image/food-jp7.jpg) no-repeat center/cover;"></div>
+            <div class="gallery-footer-item" style="background: url(./assets/image/food-cn7.jpg) no-repeat center/cover;"></div>
+        </div>
+        <section class="section-footer">
+            <div class="footer-content text-center">
+                <p class="footer-copyright">Copyright ©2022 All rights reserved by <span class="text-highlight"><i>NguyenDungTuan</></span></p>
+                <div class="footer-social">
+                    <a href="#" class="footer-social--link">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="#" class="footer-social--link">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="#" class="footer-social--link">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="footer-social--link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="#" class="footer-social--link">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+                <p class="cre">Image by Freepik</p>
+                <p class="cre">Icon by Fontawesome</p>
+            </div>
+        </section>
+    </footer>
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="./assets/slick-1.8.1/slick/slick.min.js"></script>
+
+    <script src="./assets/js/slow-scroll.js"></script>
+    <script src="./assets/js/app.js"></script>
+    <script src="./assets/js/animation.js"></script>
+</body>
+</html>

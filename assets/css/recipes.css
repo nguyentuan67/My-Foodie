@@ -1,0 +1,113 @@
+/* top banner recipes */
+
+.top-banner {
+    height: 100%;
+    position: relative;
+    background: url(../image/ice-cream-background.jpg) no-repeat;
+    background-position: top 50% left 0;
+    background-size: cover;
+}
+
+.overlay-banner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.banner-title {
+    position: relative;
+    z-index: 2;
+    padding-top: 40px;
+}
+
+/* ==== search-section===== */
+
+.ss-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.ss-gallery {
+    display: grid;
+    grid-template-columns: 150px 150px 150px;
+    grid-template-rows: 150px 150px;
+    grid-gap: 8px;
+    padding: 8px;
+    grid-template-areas:
+        "h1 h1 h3"
+        "h2 h2 h3";
+}
+
+.ss-gallery-item {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 1px 1px hsl(0deg 0% 0% / 8%), 0 2px 2px hsl(0deg 0% 0% / 8%), 0 4px 4px hsl(0deg 0% 0% / 8%), 0 8px 8px hsl(0deg 0% 0% / 8%), 0 16px 16px hsl(0deg 0% 0% / 8%);
+}
+
+.ss-gallery-item:first-child {
+    grid-area: h1;
+}
+
+.ss-gallery-item:nth-child(2) {
+    grid-area: h2;
+}
+
+.ss-gallery-item:nth-child(3) {
+    grid-area: h3;
+}
+
+.input-group {
+    height: 5rem;
+    margin-top: 20px;
+    border-radius: 99px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.form-input {
+    color: var(--text-color);
+    font-size: 1.6rem;
+    flex: 1;
+    padding: 0 20px;
+}
+
+.form-input::placeholder {
+    color: var(--text-color);
+}
+
+.form-select {
+    position: relative;
+    width: 100%;
+    padding: 10px 12px;
+    margin-top: 20px;
+    border-radius: 20px;
+    font-size: 1.6rem;
+    line-height: 20px;
+    color: var(--black-color);
+    background-color: #fff;
+    /* background-image: url(../image/dropdown-icon.jpg); */
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 16px;
+}
+
+.form-select::after {
+    content: "";
+    position: absolute;
+    background-color: #000;
+    right: 0;
+    height: 100%;
+}
+
+.option {
+    padding: 10px 0;
+}

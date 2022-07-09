@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/image/logo.png" type="image/x-icon">
+    <title>MyFoodie</title>
+    <!-- Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.4/css/all.css">
+    <!-- swiper slide -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+    <!-- My css -->
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/preload.css">
+    <link rel="stylesheet" href="./assets/css/explorer.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+</head>
+<body>
+    <div id="preload">
+        <h1>Cooking in progress..</h1>
+        <div id="cooking">
+          <div class="bubble"></div>
+          <div class="bubble"></div>
+          <div class="bubble"></div>
+          <div class="bubble"></div>
+          <div class="bubble"></div>
+          <div id="area">
+            <div id="sides">
+              <div id="pan"></div>
+              <div id="handle"></div>
+            </div>
+            <div id="pancake">
+              <div id="pastry"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- Navigation -->
+    <header class="header" id="">
+        <div class="grid wide">
+            <div class="header-container">
+                <div class="logo">
+                    <a href="/" class="logo--link">
+                        <img src="./assets/image/logo.png" alt="logo-page" class="logo--img">
+                        <span class="logo--name">MyFoodie</span>
+                    </a>
+                </div>
+                
+                <nav class="navbar">
+                    <ul class="nav-list">
+                        <li class="nav__item">
+                            <a href="./index.html" class="nav__item--link">Home</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="./recipes.html" class="nav__item--link">Recipes</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="./explorer.html" class="nav__item--link active">Explorer</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="./contact.html" class="nav__item--link">Contact</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__item--link">Mini game</a>
+                        </li>
+                    </ul>
+                    <div class="nav-social">
+                        <ul class="nav-list">
+                            <li class="nav__item">
+                                <a href="#" class="nav__item--link">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__item--link">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__item--link">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__item--link">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+    <!-- swiper slide -->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide country">
+                <div class="country__bg" style="background: url(./assets/image/explorer-bg-jp.jpg) no-repeat center/cover"></div>
+                <div class="country__content">
+                    <img src="./assets/image/explorer-jp.png" alt="japan" class="country__avt">
+                    <h2 class="country__name">Japan</h2>
+                    <p class="country__desc">There are many dishes that make the best use of the characteristics of fresh seafood (sashimi, grilled with salt, etc.), and the ingredients and cooking method are emphasized with a sense of the season.
+                        The tableware comes in a variety of colors, materials, and shapes, and it is also characterized by its delicate beauty.
+                    </p>
+                    <div class="country__detail">
+                        View details
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide country">
+                <div class="country__bg" style="background: url(./assets/image/explorer-hanoi.jpg) no-repeat center/cover"></div>
+                <div class="country__content">
+                    <img src="./assets/image/explorer-vn.png" alt="Vietnam" class="country__avt">
+                    <h2 class="country__name">Vietnam</h2>
+                    <p class="country__desc">It is basically a rice culture, and noodles and spring rolls are made from rice instead of wheat.
+                         There are many cooking methods such as stir-fry, steaming, and simmering, but fish are different from Chinese food in that they may be grilled over an open flame.
+                    </p>
+                    <div class="country__detail">
+                        View details
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide country">
+                <div class="country__bg" style="background: url(./assets/image/explorer-bg-cn.jpg) no-repeat center/cover"></div>
+                <div class="country__content">
+                    <img src="./assets/image/explorer-cn.png" alt="china" class="country__avt">
+                    <h2 class="country__name">China</h2>
+                    <p class="country__desc">In China, which has a large land area, there are cooking methods and seasoned dishes that are uniquely formed according to the differences in climate,
+                         geography, history, ingredients, and eating habits of each region. It has become widespread worldwide and is becoming more localized.
+                    </p>
+                    <div class="country__detail">
+                        View details
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide" style="height: 300px;">
+                <section class="section-footer">
+                    <div class="footer-content text-center">
+                        <p class="footer-copyright">Copyright ©2022 All rights reserved by <span class="text-highlight"><i>NguyenDungTuan</></span></p>
+                        <div class="footer-social">
+                            <a href="#" class="footer-social--link">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a href="#" class="footer-social--link">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                            <a href="#" class="footer-social--link">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="footer-social--link">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="#" class="footer-social--link">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </div>
+                        <p class="cre">Image by Freepik</p>
+                        <p class="cre">Icon by Fontawesome</p>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-scrollbar"></div>
+    </div>
+
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="./assets/slick-1.8.1/slick/slick.min.js"></script>
+
+    <script src="./assets/js/app.js"></script>
+    <script src="./assets/js/animation.js"></script>
+</body>
+</html>

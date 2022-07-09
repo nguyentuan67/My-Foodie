@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/image/logo.png" type="image/x-icon">
+    <title>MyFoodie</title>
+    <!-- Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.4/css/all.css">
+    <!-- slick slider -->
+    <link rel="stylesheet" href="./assets/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="./assets/slick-1.8.1/slick/slick-theme.css">
+
+    <!-- My css -->
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/preload.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+</head>
+<body>
+    <div id="preload">
+        <h1>Cooking in progress..</h1>
+        <div id="cooking">
+          <div class="bubble"></div>
+          <div class="bubble"></div>
+          <div class="bubble"></div>
+          <div class="bubble"></div>
+          <div class="bubble"></div>
+          <div id="area">
+            <div id="sides">
+              <div id="pan"></div>
+              <div id="handle"></div>
+            </div>
+            <div id="pancake">
+              <div id="pastry"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- Navigation -->
+    <header class="header" id="header">
+        <div class="grid wide">
+            <div class="header-container">
+                <div class="logo">
+                    <a href="/" class="logo--link">
+                        <img src="./assets/image/logo.png" alt="logo-page" class="logo--img">
+                        <span class="logo--name">MyFoodie</span>
+                    </a>
+                </div>
+                
+                <nav class="navbar hide-on-mobile">
+                    <ul class="nav-list">
+                        <li class="nav__item">
+                            <a href="./index.html" class="nav__item--link active">Home</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="./recipes.html" class="nav__item--link">Recipes</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="./explorer.html" class="nav__item--link">Explorer</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="./contact.html" class="nav__item--link">Contact</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__item--link">Mini game</a>
+                        </li>
+                    </ul>
+                    <div class="nav-social">
+                        <ul class="nav-list">
+                            <li class="nav__item">
+                                <a href="#" class="nav__item--link">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__item--link">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__item--link">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__item--link">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="app">
+        <!-- Banner section -->
+        <section class="top-banner">
+            <div class="grid wide">
+                <div class="banner-wrapper">
+                    <h1 class="title aos-init aos-animate" data-aos="fade-up">
+                        <span class="text-highlight">A chef</span> 
+                        in every <br> tasty meal box</h1>
+                    <div class="input-group aos-init aos-animate" data-aos="fade-right">
+                        <input type="text" id="search-text" class="form-input" placeholder="I want to make...">
+                        <button class="search-btn">
+                            <i class="fal fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+        <!-- Welcome section -->
+        <section class="welcom-section">
+            <div class="grid wide">
+                <div class="aos-init aos-animate" data-aos="fade-up">
+                    <h2 class="title text-center text-highlight">
+                        Welcome to...
+                    </h2>
+                    <h4 class="title-des text-center">My Website</h4>
+                    <div class="diamond-seperate"></div>
+                    <div class="card-list">
+                        <div class="card-item">
+                            <div class="card-wrap aos-init aos-animate" data-aos="slide-left">
+                                <img src="./assets/image/card-food-vn.jpg" class="card__img" alt="Vietnamese Food">
+                                <div class="card-body">
+                                  <h5 class="sub-title text-center"><span class="text-highlight">Vietnamese</span> Cuisine</h5>
+                                  <p class="card-desc">To Vietnamese, culinary culture not only does it bring flavors like others, but also conveys traditions and cultural values. 
+                                    No travelers have succeeded in their attempts to resist the temptation of Vietnamese dishes.</p>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="card-item">
+                            <div class="card-wrap aos-init aos-animate" data-aos="slide-up">
+                                <img src="./assets/image/card-food-jp.jpg" class="card__img" alt="Japanese Food">
+                                <div class="card-body">
+                                  <h5 class="sub-title text-center"><span class="text-highlight">Japanese</span> Cuisine</h5>
+                                  <p class="card-desc">Japan’s cuisine is about impeccable presentation, clean flavours and fresh ingredients. 
+                                    Meals are elaborate affairs steeped in ceremony and ritual with numerous main dishes served alongside steamed rice, pickles and dipping sauces</p>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="card-item">
+                            <div class="card-wrap aos-init aos-animate" data-aos="slide-right">
+                                <img src="./assets/image/card-food-cn.jpg" class="card__img" alt="Chinese Food">
+                                <div class="card-body">
+                                  <h5 class="sub-title text-center"><span class="text-highlight">Chinese</span> Cuisine</h5>
+                                  <p class="card-desc">Chinese cuisine emphasizes the integrity of color, fragrance and taste in its food. Chinese chefs try to make dishes beautiful by coordinating their colors.
+                                    Some dishes are plain while others can be very bright. A table of Chinese food looks very colorful and attractive.</p>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- rank section -->
+        <section class="rank-section">
+            <div class="grid wide">
+                <h5 class="title text-center text-highlight">Top Ranking</h5>
+                <div class="diamond-seperate"></div>
+                <div class="rank-slide" id="rank">
+                    <div class="rank-item">
+                        <div class="rank-item-img">
+                            <img src="./assets/image/vn1.jpg" class="rank-slide-img">
+                        </div>
+                        <div class="rank-item__title">
+                            <span class="rank-title--ranking">
+                                <i class="rank-icon rank-icon--one fas fa-crown"></i>
+                                <span class="rank-num">1</span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="rank-item">
+                        <div class="rank-item-img">
+                            <img src="./assets/image/vn4.jpg" class="rank-slide-img">
+                        </div>
+                        <div class="rank-item__title">
+                            <span class="rank-title--ranking">
+                                <i class="rank-icon rank-icon--two fas fa-crown"></i>
+                                <span class="rank-num">2</span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="rank-item">
+                        <div class="rank-item-img">
+                            <img src="./assets/image/food-cn1.jpg" class="rank-slide-img">
+                        </div>
+                        <div class="rank-item__title">
+                            <span class="rank-title--ranking">
+                                <i class="rank-icon fas fa-crown"></i>
+                                <span class="rank-num">3</span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="rank-item">
+                        <div class="rank-item-img">
+                            <img src="./assets/image/food-cn5.jpg" class="rank-slide-img">
+                        </div>
+                        <div class="rank-item__title">
+                            <span class="rank-title--ranking">
+                                <i class="rank-icon fas fa-crown"></i>
+                                <span class="rank-num">4</span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="rank-item">
+                    <div class="rank-item-img">
+                        <img src="./assets/image/food-cn4.jpg" class="rank-slide-img">
+                    </div>
+                    <div class="rank-item__title">
+                        <span class="rank-title--ranking">
+                            <i class="rank-icon fas fa-crown"></i>
+                            <span class="rank-num">5</span>
+                        </span>
+                    </div>
+                    </div>
+                    <div class="rank-item">
+                    <div class="rank-item-img">
+                        <img src="./assets/image/food-cn6.jpg" class="rank-slide-img">
+                    </div>
+                    <div class="rank-item__title">
+                        <span class="rank-title--ranking">
+                            <i class="rank-icon fas fa-crown"></i>
+                            <span class="rank-num">6</span>
+                        </span>
+                    </div>
+                    </div>
+                    <div class="rank-item">
+                    <div class="rank-item-img">
+                        <img src="./assets/image/food-cn7.jpg" class="rank-slide-img">
+                    </div>
+                    <div class="rank-item__title">
+                        <span class="rank-title--ranking">
+                            <i class="rank-icon fas fa-crown"></i>
+                            <span class="rank-num">7</span>
+                        </span>
+                    </div>
+                    </div>
+                    <div class="rank-item">
+                    <div class="rank-item-img">
+                        <img src="./assets/image/food-jp7.jpg" class="rank-slide-img">
+                    </div>
+                    <div class="rank-item__title">
+                        <span class="rank-title--ranking">
+                            <i class="rank-icon fas fa-crown"></i>
+                            <span class="rank-num">8</span>
+                        </span>
+                    </div>
+                    </div>
+                    <div class="rank-item">
+                    <div class="rank-item-img">
+                        <img src="./assets/image/food-jp6.jpg" class="rank-slide-img">
+                    </div>
+                    <div class="rank-item__title">
+                        <span class="rank-title--ranking">
+                            <i class="rank-icon fas fa-crown"></i>
+                            <span class="rank-num">9</span>
+                        </span>
+                    </div>
+                    </div>
+                    <div class="rank-item">
+                    <div class="rank-item-img">
+                        <img src="./assets/image/food-jp1.jpg" class="rank-slide-img">
+                    </div>
+                    <div class="rank-item__title">
+                        <span class="rank-title--ranking">
+                            <i class="rank-icon fas fa-crown"></i>
+                            <span clas ="rank-num">10</span>
+                        </span>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!--  recommended section -->
+        <section class="recommend-section">
+            <div class="grid wide">
+                <div class="aos-init aos-animate" data-aos="fade-up">
+                    <h2 class="title text-center text-highlight">
+                        Recommended Dishes
+                    </h2>
+                    <h4 class="title-des text-center">Popular food</h4>
+                    <div class="diamond-seperate"></div>
+                    <div class="gallery-grid aos-init aos-animate" data-aos="fade-up">
+                        <div class="gallery-item aos-init aos-animate" data-aos="slide-left" data-aos-duration="1400" data-aos-delay="400" data-aos-anchor=".gallery-grid">
+                            <div class="gallery-item--bg" style="background: url(./assets/image/food-jp6.jpg) no-repeat center/cover;"></div>
+                            <div class="gallery-item__info">
+                                <h5 class="gal-title text-center">Guy hanbagu</h5>
+                                <a href="#" class="main-btn">View more
+                                    <i class="fas fa-arrow-right more-btn--icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="gallery-item aos-init aos-animate" data-aos="slide-up" data-aos-duration="1200" data-aos-delay="200" data-aos-anchor=".gallery-grid">
+                            <div class="gallery-item--bg" style="background: url(./assets/image/vn6.jpg) no-repeat center/cover;"></div>
+                            <div class="gallery-item__info">
+                                <h5 class="gal-title text-center">Banh trang</h5>
+                                <a href="#" class="main-btn">View more
+                                    <i class="fas fa-arrow-right more-btn--icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="gallery-item aos-init aos-animate" data-aos="slide-up" data-aos-duration="1200" data-aos-delay="400" data-aos-anchor=".gallery-grid">
+                            <div class="gallery-item--bg" style="background: url(./assets/image/food-jp3.jpg) no-repeat center/cover;"></div>
+                            <div class="gallery-item__info">
+                                <h5 class="gal-title text-center">hokkaido kaisendon</h5>
+                                <a href="#" class="main-btn">View more
+                                    <i class="fas fa-arrow-right more-btn--icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="gallery-item aos-init aos-animate" data-aos="slide-up" data-aos-duration="1600" data-aos-delay="200" data-aos-anchor=".gallery-grid">
+                            <div class="gallery-item--bg" style="background: url(./assets/image/vn5.jpg) no-repeat center/cover;"></div>
+                            <div class="gallery-item__info">
+                                <h5 class="gal-title text-center">Bun bo Hue</h5>
+                                <a href="#" class="main-btn">View more
+                                    <i class="fas fa-arrow-right more-btn--icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="gallery-item aos-init aos-animate" data-aos="slide-up" data-aos-duration="1600" data-aos-delay="200" data-aos-anchor=".gallery-grid">
+                            <div class="gallery-item--bg" style="background: url(./assets/image/food-jp3.jpg) no-repeat center/cover;"></div>
+                            <div class="gallery-item__info">
+                                <h5 class="gal-title text-center">Sushi</h5>
+                                <a href="#" class="main-btn">View more
+                                    <i class="fas fa-arrow-right more-btn--icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="gallery-item aos-init aos-animate" data-aos="slide-right" data-aos-duration="1800" data-aos-delay="200" data-aos-anchor=".gallery-grid">
+                            <div class="gallery-item--bg" style="background: url(./assets/image/vn3.jpg) no-repeat center/cover;"></div>
+                            <div class="gallery-item__info">
+                                <h5 class="gal-title text-center">Banh mi</h5>
+                                <a href="#" class="main-btn">View more
+                                    <i class="fas fa-arrow-right more-btn--icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--  challenge section -->
+        <section class="challenge-section">
+            <div class="grid wide">
+                <div class="challenge-wrapper aos-init aos-animate" data-aos="fade-up">
+                    <div class="clg-item">
+                        <div class="clg-info ">
+                            <div class="clg-info-text aos-init aos-animate" data-aos="slide-up">
+                                <h5 class="title  text-center">
+                                    Let's <span class="text-highlight">challenge</span> cooking
+                                </h5>
+                                <p class="title-des">We will provide recipes and reference videos. Even if the correct ingredients and cooking procedures are the same, 
+                                    it is said that the appeal of cooking is that the taste changes depending on the person. Please challenge!</p>
+                                <div class="view-more">
+                                    <a href="#" class="more-btn">
+                                        View more
+                                        <i class="fas fa-arrow-right more-btn--icon"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clg-image aos-init aos-animate" data-aos="slide-left">
+                            <img src="./assets/image/clg-1.jpg" alt="challenge" class="clg-img">
+                        </div>
+                    </div>
+                    <div class="clg-item">
+                        <div class="clg-info">
+                            <div class="clg-info-text aos-init aos-animate" data-aos="slide-up">
+                                <h5 class="title">
+                                    How about a trip after a long absence?
+                                </h5>
+                                <p class="title-des">Different countries, different food cultures. Japanese Chinese and Vietnamese food refers to food arranged to suit the Japanese. 
+                                    If you want to eat authentic food, traveling abroad is recommended.</p>
+                                <a href="#" class="more-btn">
+                                    View more
+                                    <i class="fas fa-arrow-right more-btn--icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="clg-image aos-init aos-animate" data-aos="slide-right">
+                            <img src="./assets/image/explorer-bg-jp.jpg" alt="challenge" class="clg-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- subcribe-section -->
+        <section class="subcribe-section">
+            <div class="grid wide">
+                <div class="subcribe-wrapper">
+                    <h2 class="title">
+                        <span class="text-highlight">Subscribe</span> To Our <br> Newsletter
+                    </h2>
+                    <h4 class="title-des">
+                        If you are interested, please subscribe to our blog!
+                    </h4>
+                    <a href="#" class="main-btn">Subcribe</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- video section -->
+        <section class="video-section">
+            <div class="grid wide">
+                <div class="aos-init aos-animate" data-aos="fade-up">
+                    <h2 class="title text-center text-highlight">
+                        Recipes Video
+                    </h2>
+                    <div class="diamond-seperate"></div>
+                    <div class="gallery-video-grid aos-init aos-animate" data-aos="fade-up">
+                        <div class="gallery-item aos-init aos-animate" data-aos-anchor=".gallery-video-grid" data-aos="slide-left" data-aos-duration="1200" data-aos-delay="200">
+                            <div class="gallery-item--bg" style="background: url(./assets/image/video1.jpg) no-repeat center/cover;"></div>
+                            <div class="gallery-item__info">
+                                <h5 class="gal-title text-center">Toyama black</h5>
+                                <a href="#" class="play-btn">
+                                    <i class="fal fa-play-circle"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="gallery-item aos-init aos-animate" data-aos-anchor=".gallery-video-grid" data-aos="slide-down" data-aos-duration="1200" data-aos-delay="200">
+                            <div class="gallery-item--bg" style="background: url(./assets/image/vn2.jpg) no-repeat center/cover;"></div>
+                            <div class="gallery-item__info">
+                                <h5 class="gal-title text-center">Bun Bo Hue</h5>
+                                <a href="#" class="play-btn">
+                                    <i class="fal fa-play-circle"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="gallery-item aos-init aos-animate" data-aos-anchor=".gallery-video-grid" data-aos="slide-right" data-aos-duration="1200" data-aos-delay="200">
+                            <div class="gallery-item--bg" style="background: url(./assets/image/food-cn7.jpg) no-repeat center/cover;"></div>
+                            <div class="gallery-item__info">
+                                <h5 class="gal-title text-center">Subuta</h5>
+                                <a href="#" class="play-btn">
+                                    <i class="fal fa-play-circle"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="gallery-item aos-init aos-animate" data-aos-anchor=".gallery-video-grid" data-aos="slide-up" data-aos-duration="1200" data-aos-delay="200">
+                            <div class="gallery-item--bg" style="background: url(./assets/image/video2.jpg) no-repeat center/cover;"></div>
+                            <div class="gallery-item__info">
+                                <h5 class="gal-title text-center">Fried Rice</h5>
+                                <a href="#" class="play-btn">
+                                    <i class="fal fa-play-circle"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="gallery-item aos-init aos-animate" data-aos-anchor=".gallery-video-grid" data-aos="zoom-in" data-aos-duration="1600" data-aos-delay="300">
+                            <div class="gallery-item--bg" style="background: url(./assets/image/vn1.jpg) no-repeat center/cover;"></div>
+                            <div class="gallery-item__info">
+                                <h5 class="gal-title text-center">Banh Cuon</h5>
+                                <a href="#" class="play-btn">
+                                    <i class="fal fa-play-circle"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="gallery-footer">
+            <div class="gallery-footer-item" style="background: url(./assets/image/food-cn4.jpg) no-repeat center/cover;"></div>
+            <div class="gallery-footer-item" style="background: url(./assets/image/card-food-jp.jpg) no-repeat center/cover;"></div>
+            <div class="gallery-footer-item" style="background: url(./assets/image/vn3.jpg) no-repeat center/cover;"></div>
+            <div class="gallery-footer-item" style="background: url(./assets/image/vn6.jpg) no-repeat center/cover;"></div>
+            <div class="gallery-footer-item" style="background: url(./assets/image/food-jp7.jpg) no-repeat center/cover;"></div>
+            <div class="gallery-footer-item" style="background: url(./assets/image/food-cn7.jpg) no-repeat center/cover;"></div>
+        </div>
+        <section class="section-footer">
+            <div class="footer-content text-center">
+                <p class="footer-copyright">Copyright ©2022 All rights reserved by <span class="text-highlight"><i>NguyenDungTuan</></span></p>
+                <div class="footer-social">
+                    <a href="#" class="footer-social--link">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="#" class="footer-social--link">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="#" class="footer-social--link">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="footer-social--link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="#" class="footer-social--link">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+                <p class="cre">Image by Freepik</p>
+                <p class="cre">Icon by Fontawesome</p>
+            </div>
+        </section>
+    </footer>
+
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="./assets/slick-1.8.1/slick/slick.min.js"></script>
+
+    <script src="./assets/js/slow-scroll.js"></script>
+    <script src="./assets/js/app.js"></script>
+    <script src="./assets/js/animation.js"></script>
+
+    
+</body>
+</html>
