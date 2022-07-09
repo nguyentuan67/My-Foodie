@@ -78,6 +78,10 @@
 
 /*  tablet */
 @media (min-width: 740px) and (max-width: 1023px) {
+    .hide-on-tab {
+        display: none;
+    }
+    
     .grid.wide {
         max-width: 786px;
         margin: 0 auto;
