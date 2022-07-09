@@ -12,6 +12,8 @@
     <!-- slick slider -->
     <link rel="stylesheet" href="./assets/slick-1.8.1/slick/slick.css">
     <link rel="stylesheet" href="./assets/slick-1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
 
     <!-- My css -->
     <link rel="stylesheet" href="./assets/css/base.css">
@@ -93,6 +95,62 @@
                         </ul>
                     </div>
                 </nav>
+                <div class="nav-mobile">
+                    <div class="overlay"></div>
+                    <div class="nav-mobile__btn" id="more-btn">
+                        <i class="far fa-bars nav-mobile--icon"></i>
+                    </div>
+                    <div class="nav-mb__menu" id="nav-mb__menu">
+                        <div class="nav-mobile__btn" id="close-btn">
+                            <i class="far fa-times nav-mobile--icon"></i>
+                        </div>
+                        <ul class="nav-list">
+                            <li class="nav__item">
+                                <a href="./index.html" class="nav__item--link active">Home</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="./recipes.html" class="nav__item--link">Recipes</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="./explorer.html" class="nav__item--link">Explorer</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="./contact.html" class="nav__item--link">Contact</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__item--link">Mini game</a>
+                            </li>
+                        </ul>
+                        <div class="nav-social">
+                            <div class="sub-title text-highlight nav-social__heading">Subcribe us</div>
+                            <ul class="nav-list">
+                                <li class="nav__item">
+                                    <a href="#" class="nav__item--link">
+                                        <i class="fab fa-youtube"></i>
+                                        <span class="nav-social__name">Youtube</span>
+                                    </a>
+                                </li>
+                                <li class="nav__item">
+                                    <a href="#" class="nav__item--link">
+                                        <i class="fab fa-facebook"></i>
+                                        <span class="nav-social__name">Facebook</span>
+                                    </a>
+                                </li>
+                                <li class="nav__item">
+                                    <a href="#" class="nav__item--link">
+                                        <i class="fab fa-instagram"></i>
+                                        <span class="nav-social__name">Instagram</span>
+                                    </a>
+                                </li>
+                                <li class="nav__item">
+                                    <a href="#" class="nav__item--link">
+                                        <i class="fab fa-twitter"></i>
+                                        <span class="nav-social__name">Twitter</span>
+                                    </a>
+                                </li>
+                            </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
@@ -102,10 +160,10 @@
         <section class="top-banner">
             <div class="grid wide">
                 <div class="banner-wrapper">
-                    <h1 class="title aos-init aos-animate" data-aos="fade-up">
+                    <h1 class="title" data-aos="fade-up">
                         <span class="text-highlight">A chef</span> 
                         in every <br> tasty meal box</h1>
-                    <div class="input-group aos-init aos-animate" data-aos="fade-right">
+                    <div class="input-group" data-aos="fade-right">
                         <input type="text" id="search-text" class="form-input" placeholder="I want to make...">
                         <button class="search-btn">
                             <i class="fal fa-search"></i>
@@ -119,7 +177,7 @@
         <!-- Welcome section -->
         <section class="welcom-section">
             <div class="grid wide">
-                <div class="aos-init aos-animate" data-aos="fade-up">
+                <div data-aos="fade-up">
                     <h2 class="title text-center text-highlight">
                         Welcome to...
                     </h2>
@@ -127,7 +185,7 @@
                     <div class="diamond-seperate"></div>
                     <div class="card-list">
                         <div class="card-item">
-                            <div class="card-wrap aos-init aos-animate" data-aos="slide-left">
+                            <div class="card-wrap" data-aos="slide-left">
                                 <img src="./assets/image/card-food-vn.jpg" class="card__img" alt="Vietnamese Food">
                                 <div class="card-body">
                                   <h5 class="sub-title text-center"><span class="text-highlight">Vietnamese</span> Cuisine</h5>
@@ -137,7 +195,7 @@
                               </div>
                         </div>
                         <div class="card-item">
-                            <div class="card-wrap aos-init aos-animate" data-aos="slide-up">
+                            <div class="card-wrap" data-aos="slide-up">
                                 <img src="./assets/image/card-food-jp.jpg" class="card__img" alt="Japanese Food">
                                 <div class="card-body">
                                   <h5 class="sub-title text-center"><span class="text-highlight">Japanese</span> Cuisine</h5>
@@ -147,7 +205,7 @@
                               </div>
                         </div>
                         <div class="card-item">
-                            <div class="card-wrap aos-init aos-animate" data-aos="slide-right">
+                            <div class="card-wrap" data-aos="slide-right">
                                 <img src="./assets/image/card-food-cn.jpg" class="card__img" alt="Chinese Food">
                                 <div class="card-body">
                                   <h5 class="sub-title text-center"><span class="text-highlight">Chinese</span> Cuisine</h5>
@@ -284,14 +342,14 @@
         <!--  recommended section -->
         <section class="recommend-section">
             <div class="grid wide">
-                <div class="aos-init aos-animate" data-aos="fade-up">
+                <div class="" data-aos="fade-up">
                     <h2 class="title text-center text-highlight">
                         Recommended Dishes
                     </h2>
                     <h4 class="title-des text-center">Popular food</h4>
                     <div class="diamond-seperate"></div>
-                    <div class="gallery-grid aos-init aos-animate" data-aos="fade-up">
-                        <div class="gallery-item aos-init aos-animate" data-aos="slide-left" data-aos-duration="1400" data-aos-delay="400" data-aos-anchor=".gallery-grid">
+                    <div class="gallery-grid " data-aos="fade-up">
+                        <div class="gallery-item" data-aos="slide-left" data-aos-duration="1400" data-aos-delay="400" data-aos-anchor=".gallery-grid">
                             <div class="gallery-item--bg" style="background: url(./assets/image/food-jp6.jpg) no-repeat center/cover;"></div>
                             <div class="gallery-item__info">
                                 <h5 class="gal-title text-center">Guy hanbagu</h5>
@@ -300,7 +358,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="gallery-item aos-init aos-animate" data-aos="slide-up" data-aos-duration="1200" data-aos-delay="200" data-aos-anchor=".gallery-grid">
+                        <div class="gallery-item" data-aos="slide-up" data-aos-duration="1200" data-aos-delay="200" data-aos-anchor=".gallery-grid">
                             <div class="gallery-item--bg" style="background: url(./assets/image/vn6.jpg) no-repeat center/cover;"></div>
                             <div class="gallery-item__info">
                                 <h5 class="gal-title text-center">Banh trang</h5>
@@ -309,7 +367,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="gallery-item aos-init aos-animate" data-aos="slide-up" data-aos-duration="1200" data-aos-delay="400" data-aos-anchor=".gallery-grid">
+                        <div class="gallery-item" data-aos="slide-up" data-aos-duration="1200" data-aos-delay="400" data-aos-anchor=".gallery-grid">
                             <div class="gallery-item--bg" style="background: url(./assets/image/food-jp3.jpg) no-repeat center/cover;"></div>
                             <div class="gallery-item__info">
                                 <h5 class="gal-title text-center">hokkaido kaisendon</h5>
@@ -318,7 +376,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="gallery-item aos-init aos-animate" data-aos="slide-up" data-aos-duration="1600" data-aos-delay="200" data-aos-anchor=".gallery-grid">
+                        <div class="gallery-item" data-aos="slide-up" data-aos-duration="1600" data-aos-delay="200" data-aos-anchor=".gallery-grid">
                             <div class="gallery-item--bg" style="background: url(./assets/image/vn5.jpg) no-repeat center/cover;"></div>
                             <div class="gallery-item__info">
                                 <h5 class="gal-title text-center">Bun bo Hue</h5>
@@ -327,7 +385,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="gallery-item aos-init aos-animate" data-aos="slide-up" data-aos-duration="1600" data-aos-delay="200" data-aos-anchor=".gallery-grid">
+                        <div class="gallery-item" data-aos="slide-up" data-aos-duration="1600" data-aos-delay="200" data-aos-anchor=".gallery-grid">
                             <div class="gallery-item--bg" style="background: url(./assets/image/food-jp3.jpg) no-repeat center/cover;"></div>
                             <div class="gallery-item__info">
                                 <h5 class="gal-title text-center">Sushi</h5>
@@ -336,7 +394,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="gallery-item aos-init aos-animate" data-aos="slide-right" data-aos-duration="1800" data-aos-delay="200" data-aos-anchor=".gallery-grid">
+                        <div class="gallery-item" data-aos="slide-right" data-aos-duration="1800" data-aos-delay="200" data-aos-anchor=".gallery-grid">
                             <div class="gallery-item--bg" style="background: url(./assets/image/vn3.jpg) no-repeat center/cover;"></div>
                             <div class="gallery-item__info">
                                 <h5 class="gal-title text-center">Banh mi</h5>
@@ -353,10 +411,10 @@
         <!--  challenge section -->
         <section class="challenge-section">
             <div class="grid wide">
-                <div class="challenge-wrapper aos-init aos-animate" data-aos="fade-up">
+                <div class="challenge-wrapper" data-aos="fade-up">
                     <div class="clg-item">
                         <div class="clg-info ">
-                            <div class="clg-info-text aos-init aos-animate" data-aos="slide-up">
+                            <div class="clg-info-text" data-aos="slide-up">
                                 <h5 class="title  text-center">
                                     Let's <span class="text-highlight">challenge</span> cooking
                                 </h5>
@@ -370,13 +428,13 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="clg-image aos-init aos-animate" data-aos="slide-left">
+                        <div class="clg-image" data-aos="slide-left">
                             <img src="./assets/image/clg-1.jpg" alt="challenge" class="clg-img">
                         </div>
                     </div>
                     <div class="clg-item">
                         <div class="clg-info">
-                            <div class="clg-info-text aos-init aos-animate" data-aos="slide-up">
+                            <div class="clg-info-text" data-aos="slide-up">
                                 <h5 class="title">
                                     How about a trip after a long absence?
                                 </h5>
@@ -388,7 +446,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="clg-image aos-init aos-animate" data-aos="slide-right">
+                        <div class="clg-image" data-aos="slide-right">
                             <img src="./assets/image/explorer-bg-jp.jpg" alt="challenge" class="clg-img">
                         </div>
                     </div>
@@ -414,13 +472,13 @@
         <!-- video section -->
         <section class="video-section">
             <div class="grid wide">
-                <div class="aos-init aos-animate" data-aos="fade-up">
+                <div  data-aos="fade-up">
                     <h2 class="title text-center text-highlight">
                         Recipes Video
                     </h2>
                     <div class="diamond-seperate"></div>
-                    <div class="gallery-video-grid aos-init aos-animate" data-aos="fade-up">
-                        <div class="gallery-item aos-init aos-animate" data-aos-anchor=".gallery-video-grid" data-aos="slide-left" data-aos-duration="1200" data-aos-delay="200">
+                    <div class="gallery-video-grid" data-aos="fade-up">
+                        <div class="gallery-item" data-aos-anchor=".gallery-video-grid" data-aos="slide-left" data-aos-duration="1200" data-aos-delay="200">
                             <div class="gallery-item--bg" style="background: url(./assets/image/video1.jpg) no-repeat center/cover;"></div>
                             <div class="gallery-item__info">
                                 <h5 class="gal-title text-center">Toyama black</h5>
@@ -429,7 +487,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="gallery-item aos-init aos-animate" data-aos-anchor=".gallery-video-grid" data-aos="slide-down" data-aos-duration="1200" data-aos-delay="200">
+                        <div class="gallery-item" data-aos-anchor=".gallery-video-grid" data-aos="slide-down" data-aos-duration="1200" data-aos-delay="200">
                             <div class="gallery-item--bg" style="background: url(./assets/image/vn2.jpg) no-repeat center/cover;"></div>
                             <div class="gallery-item__info">
                                 <h5 class="gal-title text-center">Bun Bo Hue</h5>
@@ -438,7 +496,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="gallery-item aos-init aos-animate" data-aos-anchor=".gallery-video-grid" data-aos="slide-right" data-aos-duration="1200" data-aos-delay="200">
+                        <div class="gallery-item" data-aos-anchor=".gallery-video-grid" data-aos="slide-right" data-aos-duration="1200" data-aos-delay="200">
                             <div class="gallery-item--bg" style="background: url(./assets/image/food-cn7.jpg) no-repeat center/cover;"></div>
                             <div class="gallery-item__info">
                                 <h5 class="gal-title text-center">Subuta</h5>
@@ -447,7 +505,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="gallery-item aos-init aos-animate" data-aos-anchor=".gallery-video-grid" data-aos="slide-up" data-aos-duration="1200" data-aos-delay="200">
+                        <div class="gallery-item" data-aos-anchor=".gallery-video-grid" data-aos="slide-up" data-aos-duration="1200" data-aos-delay="200">
                             <div class="gallery-item--bg" style="background: url(./assets/image/video2.jpg) no-repeat center/cover;"></div>
                             <div class="gallery-item__info">
                                 <h5 class="gal-title text-center">Fried Rice</h5>
@@ -456,7 +514,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="gallery-item aos-init aos-animate" data-aos-anchor=".gallery-video-grid" data-aos="zoom-in" data-aos-duration="1600" data-aos-delay="300">
+                        <div class="gallery-item" data-aos-anchor=".gallery-video-grid" data-aos="zoom-in" data-aos-duration="1600" data-aos-delay="300">
                             <div class="gallery-item--bg" style="background: url(./assets/image/vn1.jpg) no-repeat center/cover;"></div>
                             <div class="gallery-item__info">
                                 <h5 class="gal-title text-center">Banh Cuon</h5>

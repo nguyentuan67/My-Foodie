@@ -51,7 +51,7 @@
                     </a>
                 </div>
                 
-                <nav class="navbar">
+                <nav class="navbar hide-on-mobile">
                     <ul class="nav-list">
                         <li class="nav__item">
                             <a href="./index.html" class="nav__item--link">Home</a>
@@ -94,6 +94,62 @@
                         </ul>
                     </div>
                 </nav>
+                <div class="nav-mobile">
+                    <div class="overlay"></div>
+                    <div class="nav-mobile__btn" id="more-btn">
+                        <i class="far fa-bars nav-mobile--icon"></i>
+                    </div>
+                    <div class="nav-mb__menu" id="nav-mb__menu">
+                        <div class="nav-mobile__btn" id="close-btn">
+                            <i class="far fa-times nav-mobile--icon"></i>
+                        </div>
+                        <ul class="nav-list">
+                            <li class="nav__item">
+                                <a href="./index.html" class="nav__item--link">Home</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="./recipes.html" class="nav__item--link active">Recipes</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="./explorer.html" class="nav__item--link">Explorer</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="./contact.html" class="nav__item--link">Contact</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__item--link">Mini game</a>
+                            </li>
+                        </ul>
+                        <div class="nav-social">
+                            <div class="sub-title text-highlight nav-social__heading">Subcribe us</div>
+                            <ul class="nav-list">
+                                <li class="nav__item">
+                                    <a href="#" class="nav__item--link">
+                                        <i class="fab fa-youtube"></i>
+                                        <span class="nav-social__name">Youtube</span>
+                                    </a>
+                                </li>
+                                <li class="nav__item">
+                                    <a href="#" class="nav__item--link">
+                                        <i class="fab fa-facebook"></i>
+                                        <span class="nav-social__name">Facebook</span>
+                                    </a>
+                                </li>
+                                <li class="nav__item">
+                                    <a href="#" class="nav__item--link">
+                                        <i class="fab fa-instagram"></i>
+                                        <span class="nav-social__name">Instagram</span>
+                                    </a>
+                                </li>
+                                <li class="nav__item">
+                                    <a href="#" class="nav__item--link">
+                                        <i class="fab fa-twitter"></i>
+                                        <span class="nav-social__name">Twitter</span>
+                                    </a>
+                                </li>
+                            </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
@@ -110,14 +166,14 @@
         <section class="search-section">
             <div class="grid wide">
                 <div class="ss-wrapper">
-                    <div class="ss-gallery">
-                        <div class="ss-gallery-item">
+                    <div class="ss-gallery" data-aos="fade-up">
+                        <div class="ss-gallery-item" data-aos="slide-right" data-aos-duration="1200" data-aos-delay="200">
                             <div class="gallery-item--bg" style="background: url(./assets/image/cooking3.jpg) no-repeat center/cover;"></div>
                         </div>
-                        <div class="ss-gallery-item">
+                        <div class="ss-gallery-item" data-aos-anchor=".ss-gallery" data-aos="slide-right" data-aos-duration="1200" data-aos-delay="400">
                             <div class="gallery-item--bg" style="background: url(./assets/image/cooking2.jpg) no-repeat center/cover;"></div>
                         </div>
-                        <div class="ss-gallery-item">
+                        <div class="ss-gallery-item" data-aos="slide-up" data-aos-duration="1200" data-aos-delay="200">
                             <div class="gallery-item--bg" style="background: url(./assets/image/cooking4.jpg) no-repeat center/cover;"></div>
                         </div>
                     </div>

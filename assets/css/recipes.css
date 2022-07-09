@@ -8,6 +8,10 @@
     background-size: cover;
 }
 
+.banner-wrapper {
+    width: 100%;
+}
+
 .overlay-banner {
     position: absolute;
     top: 0;
